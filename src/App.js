@@ -6,6 +6,8 @@ import NewsApi from "./components/newsApi/NewsApi";
 import NewYorkTimes from "./components/newYorkTime/NewYorkTimes";
 import TheGuardian from "./components/theGuardian/TheGuardian";
 import LandingPage from "./components/landingPage/LandingPage";
+import Settings from "./components/settings/Settings";
+
 
 import NavMenu from "./components/navMenu/NavMenu";
 
@@ -19,6 +21,7 @@ function App() {
           <Route path="/newsapi" element={<NewsApi />} />
           <Route path="/nyt" element={<NewYorkTimes />} />
           <Route path="/the-guardian" element={<TheGuardian />} />
+          <Route path="/settings" element={<Settings />} />
         </Routes>
       </Router>
 

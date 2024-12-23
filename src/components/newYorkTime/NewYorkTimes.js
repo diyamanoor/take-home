@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./NewYorkTimes.css"; // Import your CSS file
+import "./NewYorkTimes.css"; 
 
 const NewYorkTimes = () => {
   const [newsData, setNewsData] = useState([]);
@@ -73,10 +73,10 @@ const NewYorkTimes = () => {
   };
 
   return (
-    <div className="container"> {/* Added container for layout */}
+    <div className="container"> 
       <h1>New York Times</h1>
 
-      <div className="filters"> {/* Added filters div */}
+      <div className="filters"> 
         <input
           type="text"
           placeholder="Search by keyword..."
@@ -106,10 +106,10 @@ const NewYorkTimes = () => {
       {loading && <p>Loading...</p>}
       {error && <p className="error">{error}</p>}
 
-      <div className="articles"> {/* Added articles div */}
+      <div className="articles"> 
         {paginatedArticles.length > 0 ? (
           paginatedArticles.map((article) => (
-            <div key={article._id} className="article-card"> {/* Card design */}
+            <div key={article._id} className="article-card">
               <h2>{article.headline?.main}</h2>
               <p>{article.abstract}</p>
               <p>

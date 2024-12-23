@@ -59,7 +59,7 @@ const TheGuardian = () => {
     const totalPages = Math.ceil(filteredArticles.length / itemsPerPage);
 
     return (
-        <div className="container"> {/* Added container for centering */}
+        <div className="container"> 
             <h1 className="main-title">The Guardian News</h1>
 
             {loading && <p className="loading">Loading...</p>}
@@ -88,9 +88,9 @@ const TheGuardian = () => {
                 <button onClick={clearFilters} className="clear-button">Clear Filters</button>
             </div>
 
-            <div className="articles-grid"> {/* Use a grid for layout */}
+            <div className="articles-grid"> 
                 {paginatedArticles.map((article) => (
-                    <div key={article.id} className="article-card"> {/* Card styling */}
+                    <div key={article.id} className="article-card"> 
                         <h3>{article.webTitle}</h3>
                         <p><strong>Section:</strong> {article.sectionName}</p>
                         <p><strong>Pillar:</strong> {article.pillarName}</p>

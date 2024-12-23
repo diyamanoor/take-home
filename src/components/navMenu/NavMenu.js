@@ -12,7 +12,7 @@ const NavMenu = () => {
 
     return (
         <nav className="nav-bar-container">
-            <div className="nav-content"> {/* Added container for better alignment */}
+            <div className="nav-content"> 
                 <NavLink to="/" className="nav-home-link" activeClassName="active">
                     {/* <Home className="home-icon" />  */}Home
                 </NavLink>
@@ -31,9 +31,15 @@ const NavMenu = () => {
                     >
                         The Guardian
                     </NavLink>
+                    {/* <NavLink
+                        to="/settings"
+                        className="nav-item"
+                        activeClassName="active"
+                    >
+                        Seetings
+                    </NavLink> */}
                 </div>
 
-                {/* Moved toggle button to the right */}
                 <button className="menu-toggle" onClick={toggleMenu}>
                     ☰
                 </button>
